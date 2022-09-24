@@ -1,0 +1,326 @@
+* {box-sizing: border-box;}
+body {
+    background-color: #421d24;
+}
+
+
+#main {display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;}
+
+#name-date {
+    color: #ffffff;
+}
+
+
+#center-img {
+    width: 95%;
+    
+    margin: auto;
+}
+#banner-img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+
+#left-float {
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin: 15px;
+}
+
+.orange-btn {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f89f7e;
+    margin: 15px;
+}
+
+#center-btn {
+    display: grid;
+    grid-column: 5/9;
+    grid-row: 2/3;
+    margin: 15px;
+    
+}
+
+.pink-btn {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f5989f;
+    margin: 15px;
+}
+
+#right-float {
+    display: grid;
+    grid-column: 9/13;
+    grid-row: 2/3;
+    margin: 15px;
+}
+
+.yellow-btn {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fcea91;
+    margin: 15px;
+}
+
+#heart-img {
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+#club-img {
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+#diamond-img {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+
+
+
+#win-text {
+    color: #ffffff;
+}
+
+
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+#slot-machine /*formerly bottom-left */ {
+    display: grid;
+    grid-column: 1/13;
+    grid-row: 4/5;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+   
+}
+
+
+
+
+
+.blink1 {
+    animation: blinker 1s step-start infinite;
+}
+
+.blink2 {
+    animation: blinker 0.5s step-start infinite;
+}
+
+.blink3 {
+    animation: blinker 2s step-start infinite;
+}
+
+.blink4 {
+    animation: blinker 1.5s step-start infinite;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.spin1 {
+    animation-name: spin3D;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.spin2 {
+    animation-name: spin3D;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.spin3 {
+    animation-name: spin3D;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.spin4 {
+    animation-name: spin3D;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes spin3D {
+    from {transform: rotateY(0deg)}
+    to {transform: rotateY(360deg)}
+}
+
+
+footer {
+    color: #ffffff;
+    background-color: #5b2f3b;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    padding: 1em;
+    width: 100%;
+    margin: 0;
+    
+}
+
+/* end mobile phone CSS */
+
+/*start mobile table CSS */
+
+@media (min-width: 481px){
+    .orange-btn {
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        border: none;
+        background-color: #f89f7e;
+        margin: 15px;
+    }
+    .pink-btn {
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        border: none;
+        background-color: #f5989f;
+        margin: 15px;
+    }
+
+    .yellow-btn {
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        border: none;
+        background-color: #fcea91;
+        margin: 15px;
+    }
+
+
+    #heart-img {
+        width: 75%;
+        height: auto;
+        margin: auto;
+    }
+    
+    #club-img {
+        width: 75%;
+        height: auto;
+        margin: auto;
+    }
+    
+    #diamond-img {
+        width: 75%;
+        height: auto;
+        margin: auto;
+    }
+    
+
+
+}
+
+/* end mobile tablet CSS */
+
+
+@media (min-width: 769px){
+/*start desktop view at 769px */
+
+.orange-btn {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f89f7e;
+    margin: 15px;
+}
+.pink-btn {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f5989f;
+    margin: 15px;
+}
+
+.yellow-btn {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fcea91;
+    margin: 15px;
+}
+
+
+#heart-img {
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+#club-img {
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+#diamond-img {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+#slot-machine /*formerly bottom-left */ {
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 3/4;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+   
+}
+
+#text-area {
+    display: grid;
+    grid-column: 5/13;
+    grid-row: 3/4;
+    max-width: 100%;
+    height: auto;
+    margin: 2em;
+    margin-top: 3.5em;
+  
+}
+
+
+
+
+}
