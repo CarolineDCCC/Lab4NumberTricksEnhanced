@@ -35,9 +35,9 @@ let answer = 0;
     
 
 
-    const playAgain = document.querySelector('StartOver');
+    
+    const btn = document.querySelector(".playAgainBtn");
 
-    playAgain.addEventListener('click', function refreshPage(){
-        location.reload();
-        return false;
+    btn.addEventListener("click", function(){
+        window.location.reload(false)
     });
